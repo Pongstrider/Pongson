@@ -7,7 +7,6 @@ html, body, main {
     width: 100vw;
     height: 36vw;
     background-color: lightblue;
-    background-image: url("indexImages/headerImage.JPG");
     background-size: cover;
     background-position: center;
 }
