@@ -1,7 +1,17 @@
-html, body, main {
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
+
+
+body{
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+  
+html, main {
+    margin: 0;
+    padding: 0;
 }
 .header{
     position:relative;
@@ -58,22 +68,22 @@ html, body, main {
 .contentQuoteSlim{
     position:relative;
     width: 100vw;
-    height: 8vw;
+    height: 15vw;
     background-color: black;
 }
 
 .contentQuoteSlim p{
-    line-height: 4vw;
+    line-height: 12vw;
     position:absolute;
     width: 100%;
     text-align: center;
 }
 
 
+
 .contentSlide{
     position:relative;
     width: 100vw;
-    height: 30vw;
     background-color: rgb(111, 140, 255);
     background-size: cover;
     background-position: center;
@@ -139,6 +149,54 @@ html, body, main {
     z-index: 2;
 }
 
+.wideBoxHold {
+    margin-left: 30vw;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;
+}
+
+.wideBox {
+    position: relative;
+    margin-top:5vw;
+    display: flex; 
+    background-color:white;
+    justify-content: center;
+    width: 40vw;
+    height: 15vw;
+    outline: none;
+    cursor: pointer;
+    transition: transform 0.5s;
+    border-radius: 0.5vw;
+    overflow: hidden;
+    box-shadow: 0vw 0vw 1vw rgba(0, 0, 0, 0.6);
+}
+
+.wideBox img {
+    transition: transform 0.5s; /* Add transition for smooth effect */
+    width: 15vw;
+    height: 15vw;
+    object-fit: cover;
+    z-index: 0;
+    margin-left: 0;
+    transform: scale(1);
+}
+
+.wideBox:hover img {
+    transform: scale(1.1); /* Adjust the scale value as needed */
+}
+
+.wideRight {
+    position:relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25vw;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    z-index: 2;
+}
+
 
 .textHeader{
     top: 8vw;
@@ -157,6 +215,7 @@ html, body, main {
 }
 
 .textTitle{
+    
     margin: 0;
     text-align: center;
     vertical-align: middle;
