@@ -87,7 +87,7 @@ html, body, main {
 }
 
 .contentBoxHold {
-    display: flex;
+    display: flex; 
     justify-content: center;
     gap: 4vw; /* Adjust the gap between content boxes */
 }
