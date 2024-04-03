@@ -12,19 +12,6 @@ html, body, main {
     background-position: center;
 }
 
-.textHeader{
-    top: 4vw;
-    position:absolute;
-    width: 100vw;
-    height: 3vw;
-    display: flex;
-    justify-content: center;
-    font-size: 4vw;
-    font-family: "Trebuchet MS", Helvetica, sans-serif;
-    color: white;
-    text-shadow: -0.1vw 0.1vw 0.3vw rgba(0, 0, 0, 1);
-}
-
 .headerButtonHold{
     position:absolute;
     top: 19vw;
@@ -37,16 +24,27 @@ html, body, main {
 .headerButton {
     color: white; /* Set text color to white */
     background-color: transparent; /* Make background transparent */
-    border: 0.15vw solid white; /* Set white border */
+    border: 0.2vw solid white; /* Set white border */
     outline: none; /* Remove default focus outline */
     cursor: pointer; /* Change cursor to pointer on hover */
     font-size: 1.5vw;
     margin-left: 2.3vw;
     margin-right: 2.3vw;
+    display: flex; /* Use flexbox */
+    align-items: center; /* Vertically center content */
+    border-radius: 0.3vw;
+    overflow: hidden;
+    transition: 0.2s;
+}
+.headerButton p{
+    line-height: 0;
+    text-align: center;
+    vertical-align: middle;
 }
 
 .headerButton:hover {
     background-color: rgba(255, 0, 76, 0.8); /* Change background color on hover */
+    border: 0.2vw solid rgba(255, 0, 76, 1);
 }
 
 
@@ -91,7 +89,7 @@ html, body, main {
 .contentBoxHold {
     display: flex;
     justify-content: center;
-    gap: 3vw; /* Adjust the gap between content boxes */
+    gap: 4vw; /* Adjust the gap between content boxes */
 }
 
 .contentBox {
@@ -101,11 +99,27 @@ html, body, main {
     height: 20vw;
     outline: none;
     cursor: pointer;
-    transition: transform 0.5s; 
+    transition: transform 0.5s;
+    border-radius: 0.5vw;
+    overflow: hidden;
+    box-shadow: 0vw 0vw 1vw rgba(0, 0, 0, 0.6);
 }
 
 .contentBox:hover {
     transform: scale(1.1);
+}
+
+.contentBox .boxTop img {
+    transition: transform 0.5s; /* Add transition for smooth effect */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+    transform: scale(1.05);
+}
+
+.contentBox:hover .boxTop img {
+    transform: scale(1); /* Adjust the scale value as needed */
 }
 
 .boxTop{
@@ -114,22 +128,33 @@ html, body, main {
     margin: 0;
 }
 
-
-.boxTop img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
 .contentBar {
+    position:relative;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 20vw;
     height: 5vw;
     background-color: white;
+    z-index: 2;
 }
 
+
+.textHeader{
+    top: 8vw;
+    position:absolute;
+    text-align: center;
+    vertical-align: middle;
+    width: 100vw;
+    height: 3vw;
+    display: flex;
+    justify-content: center;
+    font-size: 3vw;
+    font-weight: bold;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    color: white;
+    text-shadow: -0.1vw 0.1vw 0.3vw rgba(0, 0, 0, 1);
+}
 
 .textTitle{
     margin: 0;
