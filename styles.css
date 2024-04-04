@@ -15,6 +15,12 @@ html, main {
 a {
     -webkit-tap-highlight-color: transparent;
 }
+
+img {
+    -webkit-user-drag: none;
+}
+
+
 .header{
     position:relative;
     width: 100vw;
