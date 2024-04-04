@@ -1,5 +1,3 @@
-
-
 body{
     -webkit-user-select: none; /* Safari */
     -ms-user-select: none; /* IE 10 and IE 11 */
@@ -12,6 +10,10 @@ body{
 html, main {
     margin: 0;
     padding: 0;
+}
+
+a {
+    -webkit-tap-highlight-color: transparent;
 }
 .header{
     position:relative;
@@ -49,16 +51,16 @@ html, main {
 }
 
 .headerButton {
-    color: white; /* Set text color to white */
-    background-color: transparent; /* Make background transparent */
-    border: 0.2vw solid white; /* Set white border */
-    outline: none; /* Remove default focus outline */
-    cursor: pointer; /* Change cursor to pointer on hover */
+    cursor: pointer;
+    color: white;
+    background-color: transparent;
+    border: 0.2vw solid white;
+    outline: none;
     font-size: 1.5vw;
     margin-left: 2.3vw;
     margin-right: 2.3vw;
-    display: flex; /* Use flexbox */
-    align-items: center; /* Vertically center content */
+    display: flex;
+    align-items: center;
     border-radius: 0.3vw;
     overflow: hidden;
     transition: 0.2s;
@@ -71,7 +73,7 @@ html, main {
 }
 
 .headerButton:hover {
-    background-color: rgba(255, 0, 76, 0.8); /* Change background color on hover */
+    background-color: rgba(255, 0, 76, 0.8);
     border: 0.2vw solid rgba(255, 0, 76, 1);
 }
 
@@ -103,8 +105,6 @@ html, main {
 }
 
 
-
-
 .contentSlide{
     position:relative;
     width: 100vw;
@@ -120,15 +120,17 @@ html, main {
 }
 
 .videoSlide{
+    position:absolute;
     width: 100%;
     height: 100%;
     object-fit:cover;
 }
-
-.contentBoxHold {
+video.background {
+    background: black
+}
+.contentHold {
     display: flex; 
     justify-content: center;
-    gap: 4vw; /* Adjust the gap between content boxes */
 }
 
 .contentBox {
@@ -137,7 +139,6 @@ html, main {
     width: 20vw;
     height: 20vw;
     outline: none;
-    cursor: pointer;
     transition: transform 0.5s;
     border-radius: 0.5vw;
     overflow: hidden;
@@ -177,12 +178,6 @@ html, main {
     background-color: white;
 }
 
-.wideBoxHold {
-    margin-left: 30vw;
-    display: flex; 
-    flex-direction: column; 
-    justify-content: center;
-}
 
 .wideBox {
     position:relative;
@@ -193,7 +188,6 @@ html, main {
     width: 40vw;
     height: 15vw;
     outline: none;
-    cursor: pointer;
     transition: transform 0.5s;
     border-radius: 0.5vw;
     overflow: hidden;
@@ -244,6 +238,86 @@ html, main {
 }
 
 
+.contentSquare {
+    margin-top: 10vw;
+    z-index: 1;
+    width: 20vw;
+    height: 20vw;
+    outline: none;
+    transition: transform 0.5s;
+    border-radius: 0.5vw;
+    overflow: hidden;
+    box-shadow: 0vw 0vw 1vw rgba(0, 0, 0, 0.6);
+}
+
+
+
+.contentSquare:hover {
+    transform: scale(1.1);
+}
+
+.contentSquare .boxTop img {
+    transition: transform 0.5s; /* Add transition for smooth effect */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+    transform: scale(1.05);
+}
+
+.contentSquare:hover .boxTop img {
+    transform: scale(1); /* Adjust the scale value as needed */
+}
+
+.squareTop{
+    width: 20vw;
+    height: 15vw;
+    margin: 0;
+}
+
+.squareBar {
+    position:relative;
+    width: 20vw;
+    height: 15vw;
+    transition: 0.5s;
+    background-color: white;
+    bottom:0vw;
+}
+.contentSquare:hover .squareBar {
+    bottom:10vw;
+}
+
+
+.squareBarTop{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vw;
+}
+.squareBarBottom{ 
+    display: flex;
+    text-align:center;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top:-2vw;
+    height:8vw;
+    padding:1.5vw; 
+}
+
+
+
+.footer{
+    position:relative;
+    width: 100vw;
+    height: 10vw;
+    background-color: black;
+    position:relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 
 .textHeader{
@@ -290,15 +364,4 @@ html, main {
     font-size: 1.75vw;
     font-weight: bold;
     font-family: "Trebuchet MS", Helvetica, sans-serif;
-}
-
-.footer{
-    position:relative;
-    width: 100vw;
-    height: 10vw;
-    background-color: black;
-    position:relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
