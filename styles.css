@@ -277,10 +277,11 @@ video.background {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding:1vw 1vw;
-    width: 62.5%;
+    padding-left: 2%;
+    padding-right: 2%;
+    width: 58.5%;
     left:37.5%;
-    height: 95%;
+    height: 100%;
 }
 
 
