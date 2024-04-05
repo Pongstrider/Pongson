@@ -31,7 +31,6 @@ img {
 }
 
 .header {
-    left:1vw;
     position: relative;
     width: 100vw;
     height: 36vw;
@@ -45,7 +44,6 @@ img {
 
 .headerInfo {
     top:-1vw;
-    right:1vh;
     position: relative; /* Change position to relative */
     text-align: center;
     width: 100vw;
