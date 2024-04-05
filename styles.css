@@ -20,10 +20,6 @@ img {
     -webkit-user-drag: none;
 }
 
-
-
-
-
 .headerCover{
     position:absolute;
     width: 100%;
@@ -48,6 +44,7 @@ img {
 
 .headerInfo {
     top:-1vw;
+    right:1vh;
     position: relative; /* Change position to relative */
     text-align: center;
     width: 100vw;
@@ -96,9 +93,13 @@ img {
 
 .contentQuote{
     position:relative;
-    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     height: 20vw;
     background-color: black;
+    font-size: 1.75vw;
 }
 
 .contentQuoteSlim{
@@ -123,9 +124,34 @@ img {
 
 .contentSlide{
     position:relative;
+    display: flex; 
+    justify-content: center;
     width: 100vw;
     background-size: cover;
     background-position: center;
+}
+
+#slide1{
+    justify-content: center;
+    align-items: center;
+    height: 30vw;
+    gap: 4vw; 
+}
+
+#slide2{
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 45vw;
+    gap:5vw;
+}
+
+#slide3{
+    justify-content: center;
+    align-items: center;
+    height: 30vw;
+    gap:5vw;
+    background-color: rgb(198, 0, 82);
 }
 
 .slideImage{
@@ -153,13 +179,8 @@ img {
 video.background {
     background: black
 }
-.contentHold {
-    display: flex; 
-    justify-content: center;
-}
 
 .contentBox {
-    margin-top: 5vw;
     z-index: 1;
     width: 20vw;
     height: 20vw;
@@ -188,8 +209,8 @@ video.background {
 }
 
 .boxTop{
-    width: 20vw;
-    height: 15vw;
+    width: 100%;
+    height: 75%;
     margin: 0;
 }
 
@@ -198,15 +219,15 @@ video.background {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 20vw;
-    height: 5vw;
+    width: 100%;
+    height: 25%;
     background-color: white;
+    font-size: 1.75vw;
 }
 
 
 .wideBox {
     position:relative;
-    margin-top:5vw;
     background-color: rgb(88, 0, 0);
     display: flex; 
     justify-content: center;
@@ -221,8 +242,8 @@ video.background {
 
 .wideBox img {
     transition: transform 0.5s; /* Add transition for smooth effect */
-    width: 15vw;
-    height: 15vw;
+    width: 37.5%;
+    height: 100%;
     object-fit: cover;
     margin-left: 0;
     transform: scale(1);
@@ -242,7 +263,8 @@ video.background {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 25vw;
+    text-align:center;
+    width: 62.5%;
     height: 100%;
     opacity: 1;
     transition: opacity 0.5s ease;
@@ -257,14 +279,13 @@ video.background {
     align-items: center;
     text-align: center;
     padding:1vw 1vw;
-    width: 23vw;
-    left:15vw;
-    height: 13vw;
+    width: 62.5%;
+    left:37.5%;
+    height: 95%;
 }
 
 
 .contentSquare {
-    margin-top: 10vw;
     z-index: 1;
     width: 20vw;
     height: 20vw;
@@ -295,21 +316,21 @@ video.background {
 }
 
 .squareTop{
-    width: 20vw;
-    height: 15vw;
+    width: 100%;
+    height: 75%;
     margin: 0;
 }
 
 .squareBar {
     position:relative;
-    width: 20vw;
-    height: 15vw;
+    width: 100%;
+    height: 75%;
     transition: 0.5s;
     background-color: white;
     bottom:0vw;
 }
 .contentSquare:hover .squareBar {
-    bottom:10vw;
+    bottom:50%;
 }
 
 
@@ -317,7 +338,7 @@ video.background {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 5vw;
+    height: 34%;
 }
 .squareBarBottom{ 
     display: flex;
@@ -326,7 +347,7 @@ video.background {
     align-items: center;
     position: relative;
     top:-2vw;
-    height:8vw;
+    height:54%;
     padding:1.5vw; 
 }
 
@@ -343,43 +364,36 @@ video.background {
     align-items: center;
 }
 
-
-
-
-.textTitle{
-    margin: 0;
-    text-align: center;
-    vertical-align: middle;
-    line-height: 20vw; 
-    font-size: 2vw;
+.text{
     font-family: "Trebuchet MS", Helvetica, sans-serif;
-    
-    color: white;
-    text-shadow: -0.1vw 0.1vw 0.3vw rgba(0, 0, 0, 1);
+    font-size: 1.75vw
 }
 
 .textContent{
-    font-size: 1.75vw;
+    margin:0px;
     font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 1.75vw;
 }
 
 .textShadow{
+    margin:0px;
     font-size: 1.75vw;
     font-family: "Trebuchet MS", Helvetica, sans-serif;
     color: white;
     text-shadow: -0.05vw 0.05vw 0.3vw rgba(0, 0, 0, 1);
+    font-size: 1.75vw;
 }
 
 .textColorBold{
-    font-size: 1.75vw;
     font-weight: bold;
     font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 1.75vw;
 }
 
 
 @media only screen and (hover: none) and (pointer: coarse) {
     .header {
-        height: 60vh;
+        height: 70vh;
     }
     .headerInfo {
         font-size: 250%;
@@ -391,8 +405,59 @@ video.background {
     .headerButton{
         border: 0.15em solid white;
     }
-
-    /*.contentQuote{
-        height: 30vh;
-    }*/
+    .contentQuote{
+        height: 40vh;
+        padding-left:24vw;
+        padding-right:25vw;
+    }
+    .contentQuote p{
+        font-size: 5vw;
+    }
+    .contentQuoteSlim{
+        height: 10vw;
+    }
+    #slide1{
+        height:170vw;
+        flex-direction: column;
+        gap:17.5vw;
+    }
+    .contentBox{
+        width:60vw;
+        height:60vw;
+        border-radius: 3vw;
+    }
+    #slide2{
+        height:120vw;
+        gap:17.5vw;
+    }
+    .wideBox{
+        width:90vw;
+        height:33.75vw;
+        border-radius: 3vw;
+    }
+    #slide3{
+        height:250vw;
+        flex-direction: column;
+        gap: 17.5vw
+    }
+    .contentSquare{
+        height:60vw;
+        width:60vw;
+        border-radius: 3vw;
+    }
+    .footer{
+        height:40vw;
+    }
+    .text{
+        font-size: 5vw;
+    }
+    .textContent{
+        font-size: 5vw;
+    }
+    .textColorBold{
+        font-size: 5vw;
+    }
+    .textShadow{
+        font-size: 5vw;
+    }
 }
