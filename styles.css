@@ -31,6 +31,7 @@ img {
 }
 
 .header {
+    left:1vw;
     position: relative;
     width: 100vw;
     height: 36vw;
