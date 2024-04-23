@@ -56,6 +56,11 @@ img {
 }
 
 .headerButtonHold {
+    font-size: 3vw;
+    font-weight: bold;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    color: white;
+    text-shadow: -0.01em 0.01em 0.1em rgba(0, 0, 0, 1);
     position: relative;
     top: 1vw;
     width: 100vw;
@@ -69,7 +74,7 @@ img {
     display:block;
     cursor: pointer;
     color: white;
-    background-color: transparent;
+    
     border: 0.15em solid white;
     padding:0.3em;
     outline: none;
@@ -89,7 +94,7 @@ img {
 
 .headerButton:hover {
     background-color: rgba(255, 0, 76, 0.8);
-    border: 0.15em solid rgba(255, 0, 76, 1);
+    border: 0.15em solid rgba(255,0,99,1);
 }
 
 
@@ -163,6 +168,13 @@ img {
     background-position: center;
 }
 
+#slide0{
+    justify-content: center;
+    align-items: center;
+    height: 30vw;
+    gap: 4vw; 
+}
+
 #slide1{
     justify-content: center;
     align-items: center;
@@ -184,6 +196,58 @@ img {
     height: 30vw;
     gap:5vw;
     background-color: rgb(198, 0, 82);
+}
+
+.contentImage{
+    position:absolute;
+    height:16vw;
+    top:0vw;
+}
+
+.contentImage img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+
+
+.storeImage {
+    text-decoration: none;
+    display:block;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    color: white;
+    height:100%;
+    display: flex;
+    align-items: center;
+    border-radius: 0.3em;
+    overflow: hidden;
+}
+
+.storeButtonHold {
+    position: relative;
+    top: 4.5vw;
+    right:0.5vw;
+    width: 100vw;
+    height: 3.5vw;
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+
+.storeButton {
+    text-decoration: none;
+    display:block;
+    cursor: pointer;
+    color: white;
+    
+    padding:0.3em;
+    outline: none;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
 }
 
 .slideImage{
