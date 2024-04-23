@@ -10,6 +10,7 @@ body{
 html, main {
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 a {
@@ -201,14 +202,14 @@ img {
 .contentImage{
     position:absolute;
     height:16vw;
-    top:0vw;
+    top:-2vw
 }
 
 .contentImage img{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 60%;
+    width: 55%;
 }
 
 
@@ -228,10 +229,10 @@ img {
 
 .storeButtonHold {
     position: relative;
-    top: 4.5vw;
+    top: 5.5vw;
     right:0.5vw;
     width: 100vw;
-    height: 3.5vw;
+    height: 4vw;
     display: flex;
     justify-content: center;
     gap: 2em;
@@ -511,6 +512,22 @@ video.background {
     }
     .contentQuoteSlim{
         height: 14vw;
+    }
+
+    #slide0{
+        height:80vw;
+        flex-direction: column;
+        gap:17.5vw;
+    }
+
+    .contentImage{
+        width:220vw;
+        top:2vw;
+    }
+
+    .storeButtonHold{
+        top:15vw;
+        height:12vw;
     }
 
     #slide1{
