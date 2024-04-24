@@ -290,24 +290,38 @@ video.background {
     transform: scale(1.1);
 }
 
-.contentBox .boxTop img {
-    transition: transform 0.5s; /* Add transition for smooth effect */
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: 0;
-    transform: scale(1.05);
-}
-
-.contentBox:hover .boxTop img {
-    transform: scale(1); /* Adjust the scale value as needed */
-}
-
 .boxTop{
     width: 100%;
     height: 75%;
     margin: 0;
+    display: flex;
 }
+
+.contentBox .boxTop img{
+    transition: transform 0.5s, opacity 0.5s; /* Add transition for smooth effect */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    transform: scale(1.05);
+    opacity: 1;
+}
+
+.contentBox:hover .boxTop img{
+    transform: scale(1); /* Adjust the scale value as needed */
+}
+
+.contentBox:hover .boxImg{
+    opacity: 0;
+}
+
+.boxImg{
+    margin-left:-100%;
+}
+.boxGif{
+    z-index:0;
+}
+
 
 .contentBar {
     position:relative;
@@ -318,6 +332,7 @@ video.background {
     height: 25%;
     background-color: white;
     font-size: 1.75vw;
+    z-index:2;
 }
 
 
