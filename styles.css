@@ -11,6 +11,7 @@ html, main {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 a {
@@ -518,7 +519,7 @@ video.background {
     .contentQuote{
         height: 40vh;
         padding-left:24vw;
-        padding-right:25vw;
+        padding-right:24.9vw;
     }
     .contentQuote p{
         font-size: 5vw;
