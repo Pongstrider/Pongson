@@ -168,7 +168,7 @@ img {
     background-position: center;
 }
 
-#slide0{
+#Skybound{
     justify-content: center;
     align-items: center;
     height: 30vw;
@@ -263,7 +263,7 @@ img {
     height: 100%;
     object-fit:cover;
     opacity: 0;
-    animation: fadeIn 1.5s forwards;
+    animation: fadeIn 0.5s forwards;
 }
 
 @keyframes fadeIn {
@@ -528,7 +528,7 @@ video.background {
         height: 14vw;
     }
 
-    #slide0{
+    #Skybound{
         height:80vw;
         flex-direction: column;
         gap:17.5vw;
