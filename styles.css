@@ -104,7 +104,7 @@ img {
 #slideContact{
     justify-content: center;
     align-items: center;
-    height: 25vw;
+    height: 40vw;
     background-color: rgb(198, 0, 82);
 }
 
@@ -115,7 +115,7 @@ img {
     padding:2vw;
     z-index: 1;
     width: 40vw;
-    height: 12.2vw;
+    height: 27.5vw;
     outline: none;
     background-color: white;
     border-radius: 0.5vw;
@@ -217,6 +217,7 @@ img {
     display:block;
     background-size: cover;
     background-position: center;
+    position:relative;
     cursor: pointer;
     color: white;
     height:100%;
@@ -237,6 +238,8 @@ img {
     gap: 2em;
 }
 
+
+
 .storeButton {
     text-decoration: none;
     display:block;
@@ -249,6 +252,8 @@ img {
     align-items: center;
     overflow: hidden;
 }
+
+
 
 .slideImage{
     position:absolute;
@@ -467,6 +472,7 @@ video.background {
 
 .footer{
     position:relative;
+    text-align: center;
     width: 100vw;
     height: 10vw;
     background-color: black;
