@@ -536,6 +536,13 @@ video.background {
     .headerButton{
         border: 0.15em solid white;
     }
+    .logo{
+        position:absolute;
+        width:70vw;
+        top: 50vw;
+        margin-left: 15vw;
+        z-index: 1;
+    }
     .contentQuote{
         height: 40vh;
         padding-left:24vw;
