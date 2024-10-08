@@ -354,7 +354,18 @@ video.background {
     font-size: 1.75vw;
     z-index:2;
 }
+.floating {  
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
 
+@keyframes floating {
+    0% { transform: translateY(-0.4vw); }
+    50%  { transform: translateY(0.4vw); }
+    100%   { transform: translateY(-0.4vw); }    
+}
 
 .wideBox {
     position:relative;
@@ -379,9 +390,20 @@ video.background {
     transform: scale(1);
 }
 
-.wideBox:hover img {
-    transform: scale(1.1); /* Adjust the scale value as needed */
+.wideSubjectHold {
+    position: absolute;
+    transition: transform 0.5s;
+    transform: scale(1);
 }
+
+.wideBox:hover img {
+    transform: scale(1.02); /* Adjust the scale value as needed */
+}
+.wideBox:hover .wideSubjectHold img {
+    transform: scale(1.12);
+    z-index: 1;
+}
+
 .wideBox:hover .wideRight {
     opacity: 0;
 }
